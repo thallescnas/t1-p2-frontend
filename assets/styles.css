@@ -1,0 +1,92 @@
+.selection-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.selection-area h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.selection-button {
+    padding: 15px 40px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 250px;
+}
+
+.knight-button {
+    background-color: rgb(52, 168, 83);
+}
+
+.knight-button:hover {
+    background-color: rgb(40, 140, 70);
+    transform: scale(1.05);
+}
+
+.sorcerer-button {
+    background-color: rgb(66, 133, 244);
+}
+
+.sorcerer-button:hover {
+    background-color: rgb(50, 100, 200);
+    transform: scale(1.05);
+}
+
+.fightarea {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+#char, #monster {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.character-image {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border: 3px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.lifebar {
+    height: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.lifebar .bar {
+    height: inherit;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.log {
+    border: 1px solid #999;
+    height: 200px;
+    overflow-y: scroll;
+    margin: 20px;
+    padding: 10px;
+    background-color: #1a1a1a;
+    color: white;
+    list-style: none;
+}

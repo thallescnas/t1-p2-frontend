@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/styles.css" />
+
+    <title>Projeto Luta</title>
+</head>
+<body>
+    <div id="selectionArea" class="selection-area">
+        <h1>Escolha seu Herói</h1>
+        <button id="knightButton" class="selection-button knight-button">Cavaleiro (Knight)</button>
+        <button id="sorcererButton" class="selection-button sorcerer-button">Feiticeiro (Sorcerer)</button>
+    </div>
+
+    <div id="gameArea" class="fightarea" style="display: none;">
+        <div id="char"> 
+            <img class="character-image" src="" alt="Personagem">
+            <div class="lifebar">
+                <div class="bar" style="width: 10%;"> </div>
+            </div>
+            <strong class="name"> -- </strong>
+            <div>
+                <button class="attackButton"> Atacar </button>
+            </div>
+        </div>
+
+        <div id="monster"> 
+            <img class="character-image" src="" alt="Monstro">
+            <div class="lifebar">
+                <div class="bar" style="width: 10%;"> </div>
+            </div>
+            <strong class="name"> -- </strong>
+            <div>
+                <button class="attackButton"> Atacar </button>
+            </div>
+        </div>
+    </div>
+
+    <ul class="log"> </ul>
+
+    <script src="assets/js/classes.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
