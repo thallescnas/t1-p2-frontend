@@ -32,7 +32,7 @@ class Knight extends Character {
     this.life = 100;
     this.attack = 10;
     this.defense = 8;
-    this.color = "green";
+    this.color = "violet";
     this.image = "https://static.vecteezy.com/ti/vetor-gratis/p1/16469069-ilustracao-de-cavaleiro-medieval-com-espada-gratis-vetor.jpg";
     this.maxLife = this.life;
   }
@@ -70,7 +70,7 @@ class BigMonster extends Character {
     this.attack = 16;
     this.defense = 6;
     this.color = "orange";
-    this.image = "https://static.wikia.nocookie.net/tsrd/images/d/d8/Orc.jpg/revision/latest/scale-to-width-down/258?cb=20160206123228&path-prefix=pt-br";
+    this.image = "https://www.gamerevolution.com/wp-content/uploads/sites/2/2020/05/Sneaky-Goblin-Clash-of-Clans.jpg";
     this.maxLife = this.life;
   }
 }
@@ -120,6 +120,8 @@ class Stage {
         return "rgb(66, 133, 244)";
       case "red":
         return "rgb(219, 68, 55)";
+      case "violet":
+        return "rgb(171, 71, 188)";
       default:
         return "rgb(52, 168, 83)";
     }
@@ -160,7 +162,7 @@ class Stage {
     } else {
       attacked.life = Math.min(attacked.life + actualHeal, attacked.maxLife);
       attacking.attacked = false;
-      this.log.addMessage(`${attacked.name} conseguiu defender o ataque de ${attacking.name} e se curou em ${actualHeal}`, this.getColor(attacked));
+      this.log.addMessage(`${attacked.name} conseguiu defender o ataque de ${attacking.name} e se curou em ${actualHeal} 🌱`, this.getColor(attacked));
     }
 
     this.update();
